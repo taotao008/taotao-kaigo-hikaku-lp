@@ -1,0 +1,10 @@
+/* Intro section */
+[data-block="intro-compare"] {
+  margin-top: var(--lp-intro-margin-top-desktop);
+}
+
+@media screen and (max-width: 767px) {
+  [data-block="intro-compare"] {
+    margin-top: var(--lp-intro-margin-top-mobile);
+  }
+}

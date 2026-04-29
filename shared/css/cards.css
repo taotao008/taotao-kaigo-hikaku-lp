@@ -1,0 +1,37 @@
+/* Cards section */
+[data-section="cards"] {
+  margin-top: var(--lp-cards-margin-top-desktop);
+}
+
+@media screen and (max-width: 767px) {
+  [data-section="cards"] {
+    margin-top: var(--lp-cards-margin-top-mobile);
+  }
+
+  [data-section="cards"] .ranking__card .ranking__cardArea {
+    display: block;
+    padding: var(--lp-cards-area-padding-mobile);
+  }
+
+  [data-section="cards"] .ranking__card .ranking__cardArea .ranking__cardBnr,
+  [data-section="cards"] .ranking__card .ranking__cardArea .ranking__cardPoint {
+    display: block;
+    width: 100%;
+  }
+
+  [data-section="cards"] .ranking__card .ranking__cardArea .ranking__cardBnr {
+    padding-right: var(--lp-cards-bnr-padding-right-mobile);
+  }
+
+  [data-section="cards"] .ranking__card .ranking__cardArea .ranking__cardPoint {
+    margin-top: var(--lp-cards-point-margin-top-mobile);
+    padding: var(--lp-cards-point-padding-mobile);
+  }
+
+  [data-section="cards"] .ranking__card .ranking__cardArea .ranking__cardPoint .ranking__cardPointDetail p {
+    font-size: var(--lp-cards-point-font-size-mobile);
+    line-height: var(--lp-cards-point-line-height-mobile);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+  /* Global spacing scale */
+  --lp-space-0: 0;
+  --lp-space-1: 8px;
+  --lp-space-2: 12px;
+  --lp-space-3: 16px;
+  --lp-space-4: 20px;
+  --lp-space-5: 24px;
+  --lp-space-6: 32px;
+  --lp-space-7: 40px;
+
+  /* Section layout tokens */
+  --lp-firstview-scroll-margin-top: var(--lp-space-3);
+
+  --lp-intro-margin-top-desktop: var(--lp-space-7);
+  --lp-intro-margin-top-mobile: var(--lp-space-4);
+
+  --lp-cards-margin-top-desktop: var(--lp-space-7);
+  --lp-cards-margin-top-mobile: var(--lp-space-4);
+
+  /* Cards mobile layout tokens */
+  --lp-cards-area-padding-mobile: 5px 0 15px;
+  --lp-cards-bnr-padding-right-mobile: var(--lp-space-0);
+  --lp-cards-point-margin-top-mobile: var(--lp-space-2);
+  --lp-cards-point-padding-mobile: var(--lp-space-3);
+  --lp-cards-point-font-size-mobile: 15px;
+  --lp-cards-point-line-height-mobile: 1.6;
+}
+
+@import url("./firstview.css");
+@import url("./intro.css");
+@import url("./cards.css");
