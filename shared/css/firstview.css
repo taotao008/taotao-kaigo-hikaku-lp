@@ -1,0 +1,4 @@
+/* Firstview section */
+[data-block="firstview"] {
+  scroll-margin-top: var(--lp-firstview-scroll-margin-top);
+}
