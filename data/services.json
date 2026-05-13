@@ -1,0 +1,516 @@
+{
+  "$comment": "求人サービスマスターデータ。LP の data-service-id 属性と紐付け、JSON が真実の源。詳細は plans/lp-lp-functional-island.md 参照。",
+  "$sources": {
+    "kaigobatake": "Phase 1 POC + busiconet.co.jp 5位 (項目別マージ)",
+    "levwell-kaigo": "kaigo-nav.net 1位 + busiconet.co.jp 1位 (項目別マージ)",
+    "mynavi-kaigo": "kaigo-nav.net 2位 + busiconet.co.jp 2位 (項目別マージ)",
+    "yourjob-kaigo": "kaigo-nav.net 3位より取得 (busiconet 未掲載)",
+    "kaigo-dehatarako": "kaigo-nav.net 4位 + busiconet.co.jp 3位 (項目別マージ)",
+    "staffservice-medical": "kaigo-nav.net 5位より取得 (busiconet 未掲載)",
+    "kaigoworker": "busiconet.co.jp 4位より取得 (kaigo-nav 未掲載) - LPプラン Rank4 採用"
+  },
+  "services": [
+    {
+      "id": "kaigobatake",
+      "rank": 1,
+      "$rankSource": "Phase 1 POC + busiconet.co.jp (項目別マージ)",
+      "name": "かいご畑",
+      "gtmSlug": "kaigobatake_ad",
+      "officialUrl": "https://kaigobatake.jp/",
+      "logo": {
+        "src": "assets/cdn/ctf/yjymafqkxm36/1GkUWgZM9hS7WCUKvQigFH/724eec15790efdd9321cea3e5ae9e84b/SMS______logo____color.png",
+        "alt": "かいご畑ロゴ"
+      },
+      "banner": {
+        "src": "assets/cdn/ctf/yjymafqkxm36/7CNlcZyfCJ4HOMYBC1NYsr/e081afd6cd8ef82ece1c801eddb34c18/oricon_600Ã_500.png?fm=webp",
+        "alt": "かいご畑バナー"
+      },
+      "score": 4.6,
+      "scorePercent": "45%",
+      "jobCount": "6,400",
+      "jobCountIcon": null,
+      "catchCopy": "無資格未経験OK、無料資格取得",
+      "cardPointTitle": "かいご畑の特徴",
+      "reviewSectionTitle": "かいご畑の口コミ",
+      "ctaText": "かいご畑の詳細を見る",
+      "features": [
+        "無資格・未経験向け",
+        "無料資格取得制度あり（14万円相当）",
+        "ライフスタイル対応"
+      ],
+      "featureShort": {
+        "bold": "無資格・未経験OK特化！\n5,000件以上の求人",
+        "text": "資格取得実質0円"
+      },
+      "jobCategories": [
+        "介護福祉士",
+        "実務者研修",
+        "初任者研修",
+        "無資格・未経験"
+      ],
+      "workingStyles": [
+        "正社員",
+        "契約社員",
+        "派遣",
+        "パート",
+        "紹介予定派遣"
+      ],
+      "privateJobs": {
+        "icon": "Wcircle",
+        "label": "多い"
+      },
+      "jobChangeSpeed": {
+        "icon": "middle",
+        "label": "6か月以内"
+      },
+      "supportArea": {
+        "icon": "Wcircle",
+        "label": "全国"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。",
+        "2026年オリコン顧客満足度®調査 介護転職◯年連続No.1"
+      ],
+      "reviews": [
+        {
+          "title": "無理なくできました",
+          "score": 5,
+          "scorePercent": "50%",
+          "text": "仕事をしながらの転職活動で最初は不安でしたが、こちらの仕事状況にも気を遣って頂き大変助かりました！おかけで今の職場にも影響なく、また自分も無理なくできました。大変感謝しております。"
+        },
+        {
+          "title": "とても親切で早い対応",
+          "score": 5,
+          "scorePercent": "50%",
+          "text": "とても親切で早い対応をして下さり、本当に感謝の気持ちでいっぱいです。子育て、仕事の両立をできる環境を与えて下さりありがとうございます。これから不安もありますが頑張ります。"
+        }
+      ]
+    },
+    {
+      "id": "levwell-kaigo",
+      "rank": 1,
+      "$rankSource": "kaigo-nav.net + busiconet.co.jp (項目別マージ)",
+      "name": "レバウェル介護",
+      "gtmSlug": "levwell-kaigo_ad",
+      "officialUrl": "https://job.kiracare.jp/",
+      "logo": {
+        "src": "shared/img/logos_kaigo/levwell-kaigo.png",
+        "alt": "レバウェル介護ロゴ"
+      },
+      "banner": {
+        "src": "assets/img/banners_kaigo/levwell-kaigo.jpg",
+        "alt": "レバウェル介護バナー"
+      },
+      "score": 4.6,
+      "scorePercent": "46%",
+      "jobCount": "159,000",
+      "jobCountIcon": null,
+      "catchCopy": "豊富な求人数で資格者も未経験者もオススメ！",
+      "cardPointTitle": "レバウェル介護の特徴",
+      "reviewSectionTitle": "レバウェル介護の口コミ",
+      "ctaText": "レバウェル介護の詳細を見る",
+      "features": [
+        "年間80万人が利用する実績",
+        "熟練カウンセラーによるサポート",
+        "医療福祉系転職で高い実績を持つレバレジーズグループ運営"
+      ],
+      "featureShort": null,
+      "jobCategories": [
+        "介護士/ヘルパー",
+        "介護福祉士",
+        "ケアマネージャー",
+        "生活相談員",
+        "サービス提供責任者"
+      ],
+      "workingStyles": [
+        "正社員",
+        "契約社員",
+        "パート",
+        "派遣"
+      ],
+      "privateJobs": null,
+      "jobChangeSpeed": null,
+      "supportArea": {
+        "icon": "Wcircle",
+        "label": "全国"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。"
+      ],
+      "reviews": [
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "初めての転職でしたが希望条件で転職先をご紹介いただけました。給与も2万円以上アップ（神奈川県、35歳女性）"
+        },
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "田舎なので求人あるか不安でしたが相談の次の日には5件ほど紹介（北海道、41歳男性）"
+        }
+      ]
+    },
+    {
+      "id": "mynavi-kaigo",
+      "rank": 2,
+      "$rankSource": "kaigo-nav.net + busiconet.co.jp (項目別マージ)",
+      "name": "マイナビ介護職",
+      "gtmSlug": "mynavi-kaigo_ad",
+      "officialUrl": "https://kaigoshoku.mynavi.jp/",
+      "logo": {
+        "src": "shared/img/logos_kaigo/mynavi-kaigo.jpg",
+        "alt": "マイナビ介護職ロゴ"
+      },
+      "banner": {
+        "src": "assets/img/banners_kaigo/mynavi-kaigo.png",
+        "alt": "マイナビ介護職バナー"
+      },
+      "score": 4.2,
+      "scorePercent": "42%",
+      "jobCount": "97,000",
+      "jobCountIcon": null,
+      "catchCopy": "人材大手のマイナビ運営！都市部求人◎",
+      "cardPointTitle": "マイナビ介護職の特徴",
+      "reviewSectionTitle": "マイナビ介護職の口コミ",
+      "ctaText": "マイナビ介護職の詳細を見る",
+      "features": [
+        "大手マイナビ運営",
+        "日勤のみ・高収入求人多数",
+        "就業後サポート充実"
+      ],
+      "featureShort": null,
+      "jobCategories": [
+        "介護士/ヘルパー",
+        "介護福祉士",
+        "ケアマネージャー",
+        "生活相談員",
+        "サービス提供責任者"
+      ],
+      "workingStyles": [
+        "正社員",
+        "契約社員",
+        "パート",
+        "派遣"
+      ],
+      "privateJobs": null,
+      "jobChangeSpeed": null,
+      "supportArea": {
+        "icon": "Wcircle",
+        "label": "全国"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。",
+        "マイナビのプロモーションを含む"
+      ],
+      "reviews": [
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "子供が大学で県外に住むことになり時間ができたので介護職復帰を考えました。どこかで広告をみてサイト登録してみましたが、何から何までサポート頂きほとんど時間をかけずに働く場所が決まりました。（埼玉県、52歳女性）"
+        },
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "担当者さんのレスポンスも早くスムーズに転職活動を進めることができました。求人の内容、接客含め不満な点はありませんでした。（東京都、25歳女性）"
+        }
+      ]
+    },
+    {
+      "id": "yourjob-kaigo",
+      "rank": 3,
+      "$rankSource": "kaigo-nav.net",
+      "name": "ユアジョブ介護",
+      "gtmSlug": "yourjob-kaigo_ad",
+      "officialUrl": "https://ad.presco.asia/6f0d4d84dec27e8e/cl/?bId=ddu1uf71&param2=yourjobkaigo",
+      "logo": {
+        "src": "shared/img/logos_kaigo/yourjob-kaigo.png",
+        "alt": "ユアジョブ介護ロゴ"
+      },
+      "banner": {
+        "src": "assets/img/banners_kaigo/yourjob-kaigo.png",
+        "alt": "ユアジョブ介護バナー"
+      },
+      "score": 4.0,
+      "scorePercent": "40%",
+      "jobCount": "非公開",
+      "jobCountIcon": null,
+      "catchCopy": "安心の転職サポート体制＆独自の非公開求人もあり",
+      "cardPointTitle": "ユアジョブ介護の特徴",
+      "reviewSectionTitle": "ユアジョブ介護の口コミ",
+      "ctaText": "ユアジョブ介護の詳細を見る",
+      "features": [
+        "長く働けるホワイト求人多数",
+        "ミスマッチのない職場紹介",
+        "経験豊富な転職アドバイザーによるサポート"
+      ],
+      "featureShort": null,
+      "jobCategories": [
+        "介護士/ヘルパー",
+        "介護福祉士",
+        "ケアマネージャー",
+        "生活相談員",
+        "サービス提供責任者"
+      ],
+      "workingStyles": [
+        "正社員",
+        "契約社員",
+        "パート",
+        "派遣"
+      ],
+      "privateJobs": null,
+      "jobChangeSpeed": null,
+      "supportArea": {
+        "icon": null,
+        "label": "関東・愛知・大阪のみ"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。"
+      ],
+      "reviews": [
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "初めての転職で何もわかりませんでしたが親身に相談に乗ってくれました。複数の求人紹介により、給与・勤務時間ともに満足できる職場へスムーズに転職できました。（神奈川県、34歳女性）"
+        },
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "担当の方が施設側としっかり交渉してくださり、希望に近い待遇で決まりました。豊富な求人紹介（高年収・週3～4日勤務など）とメール対応の迅速さで安心して進められました。（東京都、42歳男性）"
+        }
+      ]
+    },
+    {
+      "id": "kaigo-dehatarako",
+      "rank": 4,
+      "$rankSource": "kaigo-nav.net + busiconet.co.jp (項目別マージ)",
+      "name": "介護ではたらこ",
+      "gtmSlug": "kaigo-dehatarako_ad",
+      "officialUrl": "https://www.hatarako.net/agent/kaigo/",
+      "logo": {
+        "src": "shared/img/logos_kaigo/kaigo-dehatarako.png",
+        "alt": "介護ではたらこロゴ"
+      },
+      "banner": {
+        "src": "assets/img/banners_kaigo/kaigo-dehatarako.jpg",
+        "alt": "介護ではたらこバナー"
+      },
+      "score": 3.7,
+      "scorePercent": "37%",
+      "jobCount": "非公開",
+      "jobCountIcon": null,
+      "catchCopy": "人材大手運営の定番転職サイト！有資格者限定",
+      "cardPointTitle": "介護ではたらこの特徴",
+      "reviewSectionTitle": "介護ではたらこの口コミ",
+      "ctaText": "介護ではたらこの詳細を見る",
+      "features": [
+        "高い交渉力で通常より好条件を実現",
+        "サポートが丁寧",
+        "ディップグループ運営"
+      ],
+      "featureShort": null,
+      "jobCategories": [
+        "介護士/ヘルパー",
+        "介護福祉士",
+        "ケアマネージャー",
+        "生活相談員",
+        "サービス提供責任者"
+      ],
+      "workingStyles": [
+        "正社員",
+        "契約社員",
+        "パート",
+        "派遣"
+      ],
+      "privateJobs": null,
+      "jobChangeSpeed": null,
+      "supportArea": {
+        "icon": null,
+        "label": "一都三県のみ"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "※有資格者限定",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。"
+      ],
+      "reviews": [
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "今まで使った介護求人サイトの中で1番良かったです。1ヶ月という短期間で転職先が決まりました。さらに年収も80万アップで言うことなしです。（東京都、31歳男性）"
+        },
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "すごく多くの求人を紹介して頂けて驚きました。中には予想より提示年収が高くすぐに担当者に問い合わせし、面接をセットしてもらいました。（大阪府、45歳男性）"
+        }
+      ]
+    },
+    {
+      "id": "staffservice-medical",
+      "rank": 5,
+      "$rankSource": "kaigo-nav.net",
+      "name": "スタッフサービス・メディカル",
+      "gtmSlug": "staffservice-medical_ad",
+      "officialUrl": "https://ad.presco.asia/6f0d4d84dec27e8e/cl/?bId=9ffedbd9&param2=staffservice-medical",
+      "logo": {
+        "src": "shared/img/logos_kaigo/staffservice-medical.png",
+        "alt": "スタッフサービス・メディカルロゴ"
+      },
+      "banner": {
+        "src": "assets/img/banners_kaigo/staffservice-medical.jpg",
+        "alt": "スタッフサービス・メディカルバナー"
+      },
+      "score": 3.4,
+      "scorePercent": "34%",
+      "jobCount": "10,000",
+      "jobCountIcon": null,
+      "catchCopy": "未経験・無資格から始められる！大手スタッフサービスグループの医療・介護専門お仕事紹介サービス",
+      "cardPointTitle": "スタッフサービス・メディカルの特徴",
+      "reviewSectionTitle": "スタッフサービス・メディカルの口コミ",
+      "ctaText": "スタッフサービス・メディカルの詳細を見る",
+      "features": [
+        "未経験・無資格OKの求人が豊富",
+        "登録者の約55%が他業界からの転職者",
+        "専任担当者による就業前後の一貫サポート"
+      ],
+      "featureShort": null,
+      "jobCategories": [
+        "介護士/ヘルパー",
+        "介護福祉士",
+        "ケアマネージャー",
+        "生活相談員",
+        "サービス提供責任者"
+      ],
+      "workingStyles": [
+        "正社員",
+        "契約社員",
+        "パート",
+        "派遣"
+      ],
+      "privateJobs": null,
+      "jobChangeSpeed": null,
+      "supportArea": {
+        "icon": "Wcircle",
+        "label": "全国"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。"
+      ],
+      "reviews": [
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "子供が学校に入り時間ができたので介護職開始。年齢・経験の不安も担当者の親身な対応で解決（東京都、42歳女性）"
+        },
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "職場の人間関係悩んでいた際、第三者視点で親身にアドバイス。転職もスムーズに進行（大阪府、38歳男性）"
+        }
+      ]
+    },
+    {
+      "id": "kaigoworker",
+      "rank": 4,
+      "$rankSource": "busiconet.co.jp (LPプラン採用方針 Rank4)",
+      "name": "介護ワーカー",
+      "gtmSlug": "kaigoworker_ad",
+      "officialUrl": "https://kaigoworker.jp/",
+      "logo": {
+        "src": "shared/img/logos_kaigo/kaigoworker.png",
+        "alt": "介護ワーカーロゴ"
+      },
+      "banner": {
+        "src": "TBD",
+        "alt": "介護ワーカーバナー"
+      },
+      "score": 4.8,
+      "scorePercent": "48%",
+      "jobCount": "29,000",
+      "jobCountIcon": null,
+      "catchCopy": "スピード転職、好条件",
+      "cardPointTitle": "介護ワーカーの特徴",
+      "reviewSectionTitle": "介護ワーカーの口コミ",
+      "ctaText": "介護ワーカーの詳細を見る",
+      "features": [
+        "詳細条件検索可",
+        "手厚いサポート",
+        "3ヶ月以内スピード転職可能"
+      ],
+      "featureShort": null,
+      "jobCategories": null,
+      "workingStyles": [
+        "正社員（常勤）"
+      ],
+      "privateJobs": null,
+      "jobChangeSpeed": {
+        "icon": null,
+        "label": "3ヶ月以内"
+      },
+      "supportArea": {
+        "icon": "Wcircle",
+        "label": "全国"
+      },
+      "registrationFee": {
+        "icon": "circle",
+        "label": "無料"
+      },
+      "compareNotice": "",
+      "noticeTexts": [
+        "口コミはお客様の声の一部を掲載しています。"
+      ],
+      "reviews": [
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "次の求人を見つけるスピードが速い。希望条件に合う求人をすぐに提案してくれた。"
+        },
+        {
+          "title": null,
+          "score": null,
+          "scorePercent": null,
+          "text": "面接にコーディネーターが同席してくれてフォローいただき、心強かった。"
+        }
+      ]
+    }
+  ]
+}
