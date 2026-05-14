@@ -590,6 +590,37 @@
 .icon-practical[data-v-5f513159]:before{background:url(shared/img/ranking/icon/ranking_table_job_practical.jpg?v=20260514) no-repeat 50% 50%!important;background-size:contain!important;content:""!important;display:inline-block;height:20px;margin-right:10px;position:relative;width:20px}
 .icon-helth[data-v-5f513159]:before{background:url(shared/img/ranking/icon/ranking_table_job_helth.jpg?v=20260514) no-repeat 50% 50%!important;background-size:contain!important;content:""!important;display:inline-block;height:20px;margin-right:10px;position:relative;width:20px}
 .icon-midwives[data-v-5f513159]:before{background:url(shared/img/ranking/icon/ranking_table_job_midwives.jpg?v=20260514) no-repeat 50% 50%!important;background-size:contain!important;content:""!important;display:inline-block;height:20px;margin-right:10px;position:relative;width:20px}
+@media screen and (max-width:767px){
+  /* SP: 3段組み (medal は左 1 列で全行 span)
+   * 1段目: title (横いっぱい)
+   * 2段目: score (★4.6)
+   * 3段目: catch copy
+   */
+  .ranking__cardHeader[data-v-5f513159]{
+    display:grid!important;
+    grid-template-columns:auto 1fr;
+    grid-template-areas:"medal title" "medal catch" "medal score";
+    column-gap:10px;row-gap:4px;
+    align-items:start;
+  }
+  .ranking__cardHeaderLeft[data-v-5f513159]{display:contents!important}
+  .ranking__cardTitleArea[data-v-5f513159]{display:contents!important}
+  .ranking__cardMedalImg[data-v-5f513159]{grid-area:medal;align-self:start}
+  .ranking__cardTitle[data-v-5f513159]{grid-area:title;min-width:0;margin:0}
+  .ranking__cardScoreArea[data-v-5f513159]{
+    grid-area:score;justify-self:start;
+    padding:4px 10px!important;
+    /* background / border-radius は既存スタイル維持 */
+  }
+  .ranking__cardScoreArea[data-v-5f513159] dl[data-v-5f513159]{
+    display:flex;align-items:center;gap:6px;margin:0;
+  }
+  .ranking__cardScoreArea[data-v-5f513159] dt[data-v-5f513159]{font-size:11px!important;font-weight:700}
+  .ranking__cardScoreArea[data-v-5f513159] dd[data-v-5f513159]{margin:0;display:flex;align-items:center;gap:2px}
+  .ranking__cardScoreArea[data-v-5f513159] .ranking__cardScore[data-v-5f513159]{font-size:1.4rem!important}
+  .ranking__cardScoreArea[data-v-5f513159] .ranking__cardStar[data-v-5f513159]{font-size:14px!important}
+  .ranking__cardCatchCopy[data-v-5f513159]{grid-area:catch;min-width:0;margin:0;font-size:11px!important;line-height:1.4!important}
+}
 </style>
 </head>
   <body data-men="false" data-n-head="%7B%22data-men%22:%7B%22ssr%22:false%7D%7D">
