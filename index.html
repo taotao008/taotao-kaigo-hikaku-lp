@@ -591,35 +591,57 @@
 .icon-helth[data-v-5f513159]:before{background:url(shared/img/ranking/icon/ranking_table_job_helth.jpg?v=20260514) no-repeat 50% 50%!important;background-size:contain!important;content:""!important;display:inline-block;height:20px;margin-right:10px;position:relative;width:20px}
 .icon-midwives[data-v-5f513159]:before{background:url(shared/img/ranking/icon/ranking_table_job_midwives.jpg?v=20260514) no-repeat 50% 50%!important;background-size:contain!important;content:""!important;display:inline-block;height:20px;margin-right:10px;position:relative;width:20px}
 @media screen and (max-width:767px){
-  /* SP: 3段組み (medal は左 1 列で全行 span)
-   * 1段目: title (横いっぱい)
-   * 2段目: score (★4.6)
-   * 3段目: catch copy
+  /* SP: 2段レイアウト
+   * 1段目: medal | title | score
+   * 2段目: catch copy (横全幅、黄色マーカー風ハイライト)
+   *
+   * 素材サイズは参考画像（ナース専科転職）の見た目比率に寄せる:
+   *   - メダル 60px / タイトル 22px / score 数値 24px / catch 15px
    */
   .ranking__cardHeader[data-v-5f513159]{
     display:grid!important;
-    grid-template-columns:auto 1fr;
-    grid-template-areas:"medal title" "medal catch" "medal score";
-    column-gap:10px;row-gap:4px;
-    align-items:start;
+    grid-template-columns:auto 1fr auto;
+    grid-template-areas:"medal title score" "catch catch catch";
+    column-gap:12px;row-gap:10px;
+    align-items:center;
+    margin:12px 12px 10px!important;
   }
   .ranking__cardHeaderLeft[data-v-5f513159]{display:contents!important}
   .ranking__cardTitleArea[data-v-5f513159]{display:contents!important}
-  .ranking__cardMedalImg[data-v-5f513159]{grid-area:medal;align-self:start}
-  .ranking__cardTitle[data-v-5f513159]{grid-area:title;min-width:0;margin:0}
+
+  /* メダル: 30px */
+  .ranking__cardMedalImg[data-v-5f513159]{grid-area:medal;width:30px!important;align-self:center}
+  .ranking__cardMedalImg img[data-v-5f513159]{width:30px!important}
+
+  /* タイトル: 18 → 22px */
+  .ranking__cardTitle[data-v-5f513159]{
+    grid-area:title;min-width:0;
+    font-size:22px!important;line-height:1.2;font-weight:700;
+    text-align:center;margin:0;
+  }
+
+  /* score box: 数値 18 → 24px、★ 14 → 16px */
   .ranking__cardScoreArea[data-v-5f513159]{
-    grid-area:score;justify-self:start;
-    padding:4px 10px!important;
+    grid-area:score;justify-self:end;
+    padding:6px 12px!important;
+    text-align:center;
     /* background / border-radius は既存スタイル維持 */
   }
-  .ranking__cardScoreArea[data-v-5f513159] dl[data-v-5f513159]{
-    display:flex;align-items:center;gap:6px;margin:0;
+  .ranking__cardScoreArea[data-v-5f513159] dt[data-v-5f513159]{
+    font-size:11px!important;font-weight:700;margin-bottom:2px;
   }
-  .ranking__cardScoreArea[data-v-5f513159] dt[data-v-5f513159]{font-size:11px!important;font-weight:700}
-  .ranking__cardScoreArea[data-v-5f513159] dd[data-v-5f513159]{margin:0;display:flex;align-items:center;gap:2px}
-  .ranking__cardScoreArea[data-v-5f513159] .ranking__cardScore[data-v-5f513159]{font-size:1.4rem!important}
-  .ranking__cardScoreArea[data-v-5f513159] .ranking__cardStar[data-v-5f513159]{font-size:14px!important}
-  .ranking__cardCatchCopy[data-v-5f513159]{grid-area:catch;min-width:0;margin:0;font-size:11px!important;line-height:1.4!important}
+  .ranking__cardScoreArea[data-v-5f513159] dd[data-v-5f513159]{
+    margin:0;display:flex;align-items:center;justify-content:center;gap:3px;
+  }
+  .ranking__cardScoreArea[data-v-5f513159] .ranking__cardScore[data-v-5f513159]{font-size:24px!important;font-weight:700;line-height:1}
+  .ranking__cardScoreArea[data-v-5f513159] .ranking__cardStar[data-v-5f513159]{font-size:16px!important}
+
+  /* catch copy: 15px、横全幅で読みやすく */
+  .ranking__cardCatchCopy[data-v-5f513159]{
+    grid-area:catch;min-width:0;margin:0;
+    font-size:15px!important;font-weight:700;line-height:1.4;
+    justify-self:start;
+  }
 }
 </style>
 </head>
